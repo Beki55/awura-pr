@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FiCalendar } from "react-icons/fi";
 
 const daysGregorian = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const daysEthiopian = ["እሑድ", "ሰኞ", "ማክሰኞ", "ረቡዕ", "ሐሙስ", "ዓርብ", "ቅዳሜ"];
@@ -169,8 +170,8 @@ function App() {
               className="px-4 py-2 bg-gray-700 text-white rounded flex items-center gap-1"
               onClick={() => setShowCalendarOptions(!showCalendarOptions)}
             >
-              {/* <FiCalendar /> */}
-              <span>{useEthiopian ? "Ethiopian" : "Gregorian"}</span>
+              <FiCalendar />
+              {/* <span>{useEthiopian ? "Ethiopian" : "Gregorian"}</span> */}
             </button>
             
             {showCalendarOptions && (
