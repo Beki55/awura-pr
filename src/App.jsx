@@ -170,7 +170,7 @@ function App() {
         <div className="flex gap-2">
           <div className="relative">
             <button
-              className="px-4 py-2 bg-gray-700 text-white rounded flex items-center gap-1"
+              className="px-4 py-2 bg-black text-white rounded flex items-center gap-1"
               onClick={() => setShowCalendarOptions(!showCalendarOptions)}
             >
               <FiCalendar />
@@ -179,13 +179,13 @@ function App() {
             {showCalendarOptions && (
               <div className="absolute top-full left-0 mt-1 w-40 bg-white rounded-md shadow-lg z-10 border border-gray-200">
                 <button
-                  className={`w-full text-left px-4 py-2 hover:bg-blue-50 ${!useEthiopian ? "bg-blue-100" : ""}`}
+                  className={`w-full text-left px-4 py-2 hover:bg-gray-400 ${!useEthiopian ? "bg-gray-300" : ""}`}
                   onClick={() => toggleCalendarSystem("gregorian")}
                 >
                   Gregorian
                 </button>
                 <button
-                  className={`w-full text-left px-4 py-2 hover:bg-blue-50 ${useEthiopian ? "bg-blue-100" : ""}`}
+                  className={`w-full text-left px-4 py-2 hover:bg-gray-400 ${useEthiopian ? "bg-gray-300" : ""}`}
                   onClick={() => toggleCalendarSystem("ethiopian")}
                 >
                   Ethiopian
@@ -194,19 +194,19 @@ function App() {
             )}
           </div>
           <button
-            className="px-4 py-2 bg-gray-700 text-white rounded"
+            className="px-4 py-2 bg-black text-white rounded"
             onClick={goToToday}
           >
             today
           </button>
           <button
-            className="px-3 py-2 bg-gray-600 text-white rounded"
+            className="px-3 py-2 bg-black text-white rounded"
             onClick={() => navigateMonth(-1)}
           >
             &lt;
           </button>
           <button
-            className="px-3 py-2 bg-gray-600 text-white rounded"
+            className="px-3 py-2 bg-black text-white rounded"
             onClick={() => navigateMonth(1)}
           >
             &gt;
