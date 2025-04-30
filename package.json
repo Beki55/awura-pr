@@ -2,7 +2,9 @@
   "name": "awura-calendar-dashboard",
   "description": "A React calendar with Ethiopian and Gregorian date support",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -13,6 +15,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
+    "awura-calendar-dashboard": "^1.0.0",
     "ethio-calendar-awura": "^1.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
